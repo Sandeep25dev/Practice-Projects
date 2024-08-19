@@ -1,7 +1,13 @@
 import styles from "./Button.module.css";
 
-function Button() {
-  return <button className={styles.btn}>Button</button>;
+// eslint-disable-next-line react/prop-types
+function Button({ children, icon, isOutline }) {
+  return (
+    <button className={isOutline ? styles.outlineBtn : styles.primaryBtn}>
+      {icon}
+      {children}
+    </button>
+  );
 }
 
 export default Button;

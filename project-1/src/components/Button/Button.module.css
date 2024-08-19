@@ -1,2 +1,32 @@
-.btn {
+.primaryBtn {
+  /* all: unset; */
+  padding: 10px 18px;
+  min-width: 220px;
+  background-color: black;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  font-size: 16px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.outlineBtn {
+  /* all: unset; */
+  padding: 10px 18px;
+  min-width: 220px;
+  color: black;
+  background-color: white;
+  width: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
