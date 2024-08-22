@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
-function StartGame() {
+function StartGame({ toggle }) {
   return (
     <Container>
       <div>
@@ -8,11 +9,15 @@ function StartGame() {
       </div>
       <div className="content">
         <h1>Dice Game</h1>
-        <Button>Play Now</Button>
+        <Button onClick={toggle}>Play Now</Button>
       </div>
     </Container>
   );
 }
+
+StartGame.propTypes = {
+  toggle: PropTypes.func.isRequired, // This validates that 'toggle' is a required function
+};
 
 export default StartGame;
 
